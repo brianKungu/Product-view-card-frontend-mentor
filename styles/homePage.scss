@@ -1,0 +1,127 @@
+@import "./variables/variables.scss";
+* {
+  max-width: 1440px;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+
+body {
+  background-color: $cream;
+}
+
+.card-container {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.card {
+  background-color: $white;
+  max-width: 700px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  border-radius: 1rem;
+}
+
+.card-body {
+  background-color: $white;
+  height: auto;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.card-title p {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-weight: $montSeratFontSecWeight;
+  font-size: $defaultFontSize;
+}
+
+.card-title p,
+.card-content p {
+  font-family: $montSeratFont;
+  color: $darkGrayishBlue;
+}
+
+.card-title h1 {
+  margin: 1rem 0;
+  font-family: $frauncesFont;
+  font-weight: $montSeratFontSecWeight;
+  font-size: 3.5rem;
+  width: 100%;
+}
+
+.card-content p {
+  font-size: 1rem;
+}
+
+.desktop-image,
+.mobile-image {
+  width: 100%;
+}
+
+.mobile-image {
+  display: none;
+}
+
+.price-section {
+  padding: 1rem 0;
+}
+
+.price {
+  font-weight: $montSeratFontSecWeight;
+  font-size: 2rem;
+  color: $darkCyan;
+  padding-right: 1rem;
+}
+
+.discount {
+  text-align: center;
+  color: $darkGrayishBlue;
+}
+
+button {
+  background-color: $darkCyan;
+  color: $white;
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+button span {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.cart-text {
+  font-weight: $montSeratFontSecWeight;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  .desktop-image {
+    display: none;
+  }
+
+  .mobile-image {
+    display: block;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  .card-title h1 {
+    font-size: 2rem;
+  }
+}
