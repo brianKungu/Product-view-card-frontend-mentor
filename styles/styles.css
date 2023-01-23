@@ -95,6 +95,10 @@ button {
   border-radius: 0.5rem;
 }
 
+button:hover {
+  background-color: hsl(212deg, 21%, 14%);
+}
+
 .icon {
   margin-right: 0.5rem;
 }
